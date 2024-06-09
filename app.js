@@ -1,17 +1,17 @@
 // адрес назначения Lat
-let addressLat;
+let addresLat = 10;
 // адрес назначения Long 
-let addresLong 
+let addresLong = 20;
 // текущее положение пользователя Lat допустим равен 3
 let positionLat  = 3;
 // текущее положение пользователя Long допустим равен 6
 let positionLong = 6;
 
 // получаем длину
-addresLong = positionLong * positionLong;
+addresLong = (addresLong - positionLong ) * 2;
 // получаем широту
-addressLat = positionLat * positionLat;
+addressLat = (addresLat - positionLat ) * 2;
 // чтобы получить значение дистанции к объекту 
-let addressObject = addresLong + addressLat;
+let addressObject = (addresLong + addressLat ) / 2 ;
 // диагональ объекта.
-console.log(Math.sqrt(addressObject));
+console.log(addressObject);
