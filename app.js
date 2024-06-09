@@ -14,4 +14,5 @@ addressLat = (addresLat - positionLat ) * 2;
 // чтобы получить значение дистанции к объекту 
 let addressObject = (addresLong + addressLat ) / 2 ;
 // диагональ объекта.
-console.log(addressObject);
+console.log(addressObject);   
+ 
